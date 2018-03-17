@@ -1,0 +1,15 @@
+{
+  "name": "wedding-invitation",
+  "version": "1.0.0",
+  "description": "Wedding invitation page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html -d docs -o index.html --public-url ./"
+  },
+  "author": "perhapsspy@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

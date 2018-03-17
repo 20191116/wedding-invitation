@@ -1,0 +1,162 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+$card-margin: 32px;
+html {
+  color: #222;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', '맑은 고딕', '돋움', sans-serif;
+  line-height: 140%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+i.material-icons {
+  vertical-align: top;
+}
+
+body {
+  background: #0e0e0e;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 8px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 8px 0;
+  padding: $card-margin;
+  overflow: hidden;
+  background: #12110e;
+  color: #ad835a;
+  border: 1px solid #382f1f;
+  .no-margin {
+    margin-left: -$card-margin;
+    margin-right: -$card-margin;
+  }
+}
+
+.card.title {
+  background: url("./bg.png") center center;
+  background-size: 100%;
+  a {
+    color: #ad835a;
+    text-decoration: none;
+  }
+  a.button {
+    background: #390f00;
+    border: 1px solid #67351f;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffcb8d;
+    text-shadow: 0 0 5px #dd3400;
+    overflow: hidden;
+    &:hover {
+      background: #6e1c00
+    }
+    i {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  h1 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0 0 16px 0;
+    line-height: 100%;
+    color: #bf642f;
+    strong {
+      font-weight: normal;
+      font-size: 20px;
+      color: #a99877;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    color: #f4f4f4;
+    margin: 16px 0;
+    i {
+      vertical-align: baseline;
+      color: deeppink;
+    }
+  }
+  h3 {
+    margin: 16px 0;
+    font-size: 18px;
+    color: #7979d4;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 16px 0;
+    padding: 0;
+    i {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.card.back {
+  background: #252017;
+  img {
+    border: 1px solid #a99877;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+  p {
+    padding: 0;
+    margin: 20px 0 0 0;
+    line-height: 160%;
+    i {
+      color: deeppink;
+    }
+  }
+}
+
+.card.location {
+  text-align: left;
+  h2 {
+    font-size: 30px;
+    color: #bf642f;
+    margin: 0 0 20px 0;
+    i {
+      vertical-align: baseline;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    color: #f4f4f4;
+    i {
+      vertical-align: top;
+      font-size: 20px;
+    }
+  }
+  span.line-2 {
+    color: green;
+  }
+  em {
+    color: #7979d4;
+    font-style: normal;
+  }
+  .info ul {
+    padding: 0 0 0 24px;
+    li {
+
+    }
+  }
+}
