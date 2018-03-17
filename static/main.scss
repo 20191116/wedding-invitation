@@ -34,7 +34,6 @@ body {
 .card {
   margin: 8px 0;
   padding: $card-margin;
-  overflow: hidden;
   background: #12110e;
   color: #ad835a;
   border: 1px solid #382f1f;
@@ -51,22 +50,24 @@ body {
     color: #ad835a;
     text-decoration: none;
   }
-  a.button {
+  .button {
     background: #390f00;
     border: 1px solid #67351f;
     display: inline-block;
     padding: 8px 16px;
     font-size: 14px;
     line-height: 16px;
-    color: #ffcb8d;
-    text-shadow: 0 0 5px #dd3400;
-    overflow: hidden;
-    &:hover {
-      background: #6e1c00
-    }
+    border-radius: 0;
+    color: #ffcb8d !important;
     i {
       font-size: 14px;
       line-height: 16px;
+    }
+    &:hover {
+      background: #6e1c00
+    }
+    .addeventatc_icon {
+      display: none
     }
   }
   h1 {
@@ -155,8 +156,5 @@ body {
   }
   .info ul {
     padding: 0 0 0 24px;
-    li {
-
-    }
   }
 }
