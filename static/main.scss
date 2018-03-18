@@ -1,10 +1,15 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+  font-family: Kodia;
+  font-weight: normal;
+  src: url("../fonts/kodia.eot");
+  src: local("Kodia"), url("../fonts/kodia.woff") format("woff");
+}
 
 $card-margin: 32px;
 html {
   color: #222;
   font-size: 16px;
-  font-family: 'Noto Sans KR', '맑은 고딕', '돋움', sans-serif;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "돋움", Dotum, sans-serif, Helvetica;
   line-height: 140%;
   text-align: center;
   margin: 0;
@@ -44,6 +49,7 @@ body {
 }
 
 .card.title {
+  font-family: Kodia;
   background: url("./bg.png") center center;
   background-size: 100%;
   a {
@@ -51,6 +57,7 @@ body {
     text-decoration: none;
   }
   .button {
+    font-family: Kodia;
     background: #390f00;
     border: 1px solid #67351f;
     display: inline-block;
@@ -85,9 +92,9 @@ body {
   h2 {
     font-size: 30px;
     color: #f4f4f4;
-    margin: 16px 0;
+    margin: 32px 0;
     i {
-      vertical-align: baseline;
+      vertical-align: center;
       color: deeppink;
     }
   }
