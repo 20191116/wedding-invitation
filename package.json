@@ -4,8 +4,8 @@
   "description": "Wedding invitation page",
   "main": "index.html",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html -d docs -o index.html --public-url ./"
+    "dev": "rm -rf dist/ && parcel index.html",
+    "build": "rm -rf docs/ && parcel build index.html -d docs -o index.html --public-url ./"
   },
   "author": "perhapsspy@gmail.com",
   "license": "MIT",

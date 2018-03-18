@@ -1,3 +1,5 @@
+$card-margin: 32px;
+
 @font-face {
   font-family: Kodia;
   font-weight: normal;
@@ -5,7 +7,6 @@
   src: local("Kodia"), url("../fonts/kodia.woff") format("woff");
 }
 
-$card-margin: 32px;
 html {
   color: #222;
   font-size: 16px;
@@ -16,6 +17,12 @@ html {
   padding: 0;
 }
 
+body {
+  background: #0e0e0e;
+  padding: 0;
+  margin: 0;
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: normal;
 }
@@ -24,15 +31,13 @@ i.material-icons {
   vertical-align: top;
 }
 
-body {
-  background: #0e0e0e;
-  padding: 0;
-  margin: 0;
+.quest {
+  color: goldenrod;
 }
 
 .container {
   padding: 0 8px;
-  max-width: 560px;
+  max-width: 768 - 16px;
   margin: 0 auto;
 }
 
@@ -139,29 +144,26 @@ body {
 .card.location {
   text-align: left;
   h2 {
+    font-family: Kodia;
     font-size: 30px;
     color: #bf642f;
     margin: 0 0 20px 0;
-    i {
-      vertical-align: baseline;
-    }
   }
   h3 {
+    font-family: Kodia;
     font-size: 20px;
     color: #f4f4f4;
-    i {
-      vertical-align: top;
-      font-size: 20px;
-    }
   }
   span.line-2 {
     color: green;
   }
   em {
+
     color: #7979d4;
     font-style: normal;
   }
   .info ul {
+
     padding: 0 0 0 24px;
   }
 }
