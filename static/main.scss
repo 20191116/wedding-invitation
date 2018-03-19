@@ -17,6 +17,10 @@ html {
   padding: 0;
 }
 
+.browserupgrade {
+  color: #ffffff;
+}
+
 body {
   background: #0e0e0e;
   padding: 0;
@@ -42,7 +46,7 @@ i.material-icons {
 }
 
 .card {
-  margin: 8px 0;
+  margin: 16px 0;
   padding: $card-margin;
   background: #12110e;
   color: #ad835a;
@@ -141,7 +145,7 @@ i.material-icons {
   }
 }
 
-.card.location {
+.card.extra {
   text-align: left;
   h2 {
     font-family: Kodia;
@@ -162,8 +166,8 @@ i.material-icons {
     color: #7979d4;
     font-style: normal;
   }
-  .info ul {
-
+  ul {
     padding: 0 0 0 24px;
   }
 }
+
