@@ -20,13 +20,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <link href="./static/main.scss" lang="scss" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32829704-8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        dataLayer.push('js', new Date());
-        dataLayer.push('config', 'UA-32829704-8');
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-32829704-8');
     </script>
 </head>
 <body>
