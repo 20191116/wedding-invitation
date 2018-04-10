@@ -1,0 +1,189 @@
+$card-margin: 32px;
+
+@font-face {
+  font-family: Kodia;
+  font-weight: normal;
+  src: url("../fonts/kodia.eot");
+  src: local("Kodia"), url("../fonts/kodia.woff") format("woff");
+}
+
+html {
+  color: #222;
+  font-size: 16px;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "돋움", Dotum, sans-serif, Helvetica;
+  line-height: 140%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.browserupgrade {
+  color: #ffffff;
+}
+
+body {
+  background: #0e0e0e;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+i.material-icons {
+  vertical-align: top;
+}
+
+.quest {
+  color: goldenrod;
+}
+
+.container {
+  padding: 0 8px;
+  max-width: 768 - 16px;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 16px 0;
+  padding: $card-margin;
+  background: #12110e;
+  color: #ad835a;
+  border: 1px solid #382f1f;
+  .no-margin {
+    margin-left: -$card-margin;
+    margin-right: -$card-margin;
+  }
+}
+
+.card.title {
+  font-family: Kodia;
+  background: url("./bg.png") center center;
+  background-size: 100%;
+  position: relative;
+  a {
+    color: #ad835a;
+    text-decoration: none;
+  }
+  .button {
+    font-family: Kodia;
+    background: #390f00;
+    border: 1px solid #67351f;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 0;
+    color: #ffcb8d !important;
+    i {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &:hover {
+      background: #6e1c00
+    }
+    .addeventatc_icon {
+      display: none
+    }
+  }
+  h1 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0 0 16px 0;
+    line-height: 100%;
+    color: #bf642f;
+    strong {
+      font-weight: normal;
+      font-size: 20px;
+      color: #a99877;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    color: #f4f4f4;
+    margin: 32px 0;
+    i {
+      vertical-align: center;
+      color: deeppink;
+    }
+  }
+  h3 {
+    margin: 16px 0;
+    font-size: 18px;
+    color: #7979d4;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 16px 0;
+    padding: 0;
+    i {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .skin {
+    position: absolute;
+    top:8px; right:8px;
+    img {
+      width: 20px; height:20px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.card.back {
+  background: #252017;
+  img {
+    border: 1px solid #a99877;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+  p {
+    padding: 0;
+    margin: 20px 0 0 0;
+    line-height: 160%;
+    i {
+      color: deeppink;
+    }
+  }
+}
+
+.card.extra {
+  text-align: left;
+  h2 {
+    font-family: Kodia;
+    font-size: 30px;
+    color: #bf642f;
+    margin: 0 0 20px 0;
+  }
+  h3 {
+    font-family: Kodia;
+    font-size: 20px;
+    color: #f4f4f4;
+  }
+  span.line-2 {
+    color: limegreen;
+  }
+  span.line-1 {
+    color: dodgerblue;
+  }
+  em {
+
+    color: #7979d4;
+    font-style: normal;
+  }
+  ul {
+    padding: 0 0 0 24px;
+  }
+}
+

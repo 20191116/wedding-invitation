@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" href="static/apple-icon.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
-    <link href="static/main.scss" lang="scss" rel="stylesheet">
+    <link href="static/diablo3.scss" lang="scss" rel="stylesheet">
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32829704-8"></script>
     <script>
@@ -38,22 +38,21 @@
 <p class="browserupgrade">최신 브라우저를 사용해주세요.</p>
 <![endif]-->
 <div class="container">
-    <div class="card main">
+    <div class="card title">
         <h1>
-            초대합니다!
+            초대합니다<span class="quest">!</span><br>
+            <strong>달&파이 결혼식</strong>
         </h1>
-        <h2>달&파이 결혼식</h2>
-        <img src="static/lunarpie.png">
-        <!--<h2>정경업 <i class="material-icons">favorite</i> 박찬미</h2>-->
+        <h2>정경업 <i class="material-icons">favorite</i> 박찬미</h2>
         <h3>
-            <div class="black"><span class="w">박영길</span> &nbsp;&nbsp; <span class="m">정일영</span></div>
-            <div class="white"><span class="w">채성애</span> &nbsp;&nbsp; <span class="m">임순덕</span></div>
+            정일영 &nbsp; 박영길<br/>
+            임순덕 &nbsp; 채성애
         </h3>
-        <h4><i class="material-icons">schedule</i> 2018. 6. 23. 오후 1:00<br/>
-            <a href="#location">JK아트컨벤션 <i class="material-icons">business</i> 아트리움</a>
+        <h4><i class="material-icons quest">schedule</i> 2018. 6. 23. 오후 1:00<br/>
+            <a href="#location">JK아트컨벤션 <i class="material-icons quest">business</i> 아트리움</a>
         </h4>
         <div title="일정 추가" class="button addeventatc">
-            <i class="material-icons">insert_invitation</i>
+            <i class="material-icons quest">insert_invitation</i>
             일정 추가
             <span class="start">06/23/2018 01:00 PM</span>
             <span class="end">06/23/2018 03:00 PM</span>
@@ -62,19 +61,22 @@
             <span class="description">정경업 & 박찬미 결혼식\n정일영 | 박영길\n임순덕 | 채성애\n\nSK리더스뷰 4층 JK아트컨벤션 아트리움 홀\nhttps://goo.gl/maps/yZz9FsuQbBS2</span>
             <span class="location">서울특별시 영등포구 문래로 164</span>
         </div>
-
-        <div class="illustrator">
-            그림 <a href="https://www.facebook.com/suechoe88" target="_blank">@최슬기</a>
+        <div class="skin">
+            <a href="index.html">
+                <img src="static/lunarpie.png" /> ?
+            </a>
         </div>
     </div>
-    <div class="skin">
-        <a href="diablo3.html">
-            <img src="static/apple-icon.png"/> ?
-        </a>
+    <div class="card back">
+        <img src="static/ring.png"/>
+        <p>
+            함께 추억을 나누다가<br/>
+            결혼 반지를 맞추게 되었습니다. <i class="material-icons">mood</i>
+        </p>
     </div>
     <div class="card extra left">
         <h2 id="location">
-            <i class="material-icons">location_on</i>
+            <i class="material-icons quest">location_on</i>
             오시는 길
         </h2>
         <div class="no-margin">
@@ -82,13 +84,13 @@
                     width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
-        <h3><i class="material-icons">beenhere</i> 주소</h3>
+        <h3><i class="material-icons quest">beenhere</i> 주소</h3>
         <p>
             서울특별시 영등포구 문래로 164<br/>
             SK리더스뷰 4층 JK아트컨벤션<br/>
             02-2628-9100
         </p>
-        <h3><i class="material-icons">directions_subway</i> 지하철</h3>
+        <h3><i class="material-icons quest">directions_subway</i> 지하철</h3>
         <p><span class="line-2">2호선 문래역</span> 하차</p>
         <p>
             <em>셔틀</em> : 4번 출구 뒷쪽 탑승<br/>
@@ -97,7 +99,7 @@
             <span class="line-1">1호선 영등포역</span> 하차</p>
         <p>
             <em>도보</em> : 타임스퀘어 서문 신호등 건너편</p>
-        <h3><i class="material-icons">directions_bus</i> 버스</h3>
+        <h3><i class="material-icons quest">directions_bus</i> 버스</h3>
         <p>문래역 하차</p>
         <p>
             <em>지선</em> : 6211, 6625<br/>
@@ -105,7 +107,7 @@
             <em>간선</em> : 641<br/>
             <em>마을</em> : 영등포05
         </p>
-        <h3><i class="material-icons">directions_car</i> 자가용</h3>
+        <h3><i class="material-icons quest">directions_car</i> 자가용</h3>
         <p>내비게이션 검색</p>
         <ul>
             <li>JK아트컨벤션</li>
@@ -116,7 +118,7 @@
     </div>
     <div class="card extra">
         <h2>
-            <i class="material-icons">comment</i>
+            <i class="material-icons quest">comment</i>
             댓글
         </h2>
         <div id="fb-root"></div>
@@ -131,7 +133,7 @@
         <div class="fb-comments"
              data-href="https://perhapsspy.github.io/wedding-invitation/"
              data-width="100%"
-             data-colorscheme="light"
+             data-colorscheme="dark"
              data-numposts="5">
         </div>
     </div>

@@ -1,20 +1,22 @@
-$card-margin: 32px;
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Poor+Story:400');
 
-@font-face {
-  font-family: Kodia;
-  font-weight: normal;
-  src: url("../fonts/kodia.eot");
-  src: local("Kodia"), url("../fonts/kodia.woff") format("woff");
-}
+$card-margin: 32px;
+$title-font: "Black Han Sans";
+$content-color: #262626;
+$content-font: "Poor Story";
 
 html {
-  color: #222;
   font-size: 16px;
-  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "돋움", Dotum, sans-serif, Helvetica;
+  font-family: $content-font, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "돋움", Dotum, sans-serif, Helvetica;
   line-height: 140%;
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .browserupgrade {
@@ -22,7 +24,7 @@ html {
 }
 
 body {
-  background: #0e0e0e;
+  background: #28C1E5;
   padding: 0;
   margin: 0;
 }
@@ -35,128 +37,135 @@ i.material-icons {
   vertical-align: top;
 }
 
-.quest {
-  color: goldenrod;
-}
-
 .container {
-  padding: 0 8px;
-  max-width: 768 - 16px;
+  padding: 0 0;
+  max-width: 640px;
   margin: 0 auto;
 }
 
+.skin {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #ffffff;
+  img {
+    width: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  a {
+    color: #ffffff;
+  }
+}
+
 .card {
-  margin: 16px 0;
-  padding: $card-margin;
-  background: #12110e;
-  color: #ad835a;
-  border: 1px solid #382f1f;
+  padding: $card-margin 0;
+  margin: $card-margin 8px;
   .no-margin {
     margin-left: -$card-margin;
     margin-right: -$card-margin;
   }
 }
 
-.card.title {
-  font-family: Kodia;
-  background: url("./bg.png") center center;
-  background-size: 100%;
-  a {
-    color: #ad835a;
-    text-decoration: none;
+.card.main {
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 400px;
   }
-  .button {
-    font-family: Kodia;
-    background: #390f00;
-    border: 1px solid #67351f;
-    display: inline-block;
-    padding: 8px 16px;
-    font-size: 14px;
-    line-height: 16px;
-    border-radius: 0;
-    color: #ffcb8d !important;
-    i {
-      font-size: 14px;
-      line-height: 16px;
-    }
-    &:hover {
-      background: #6e1c00
-    }
-    .addeventatc_icon {
-      display: none
-    }
-  }
+
   h1 {
+    font-family: $title-font;
+    transform: skewX(-18deg);
     font-size: 40px;
     padding: 0;
-    margin: 0 0 16px 0;
+    margin: 0 0 0px 0;
     line-height: 100%;
-    color: #bf642f;
-    strong {
-      font-weight: normal;
-      font-size: 20px;
-      color: #a99877;
-    }
+    color: $content-color;
   }
   h2 {
-    font-size: 30px;
+    font-family: $title-font;
+    transform: skewX(18deg) !important;
+    font-size: 28px;
+    margin: 0 0;
     color: #f4f4f4;
-    margin: 32px 0;
     i {
-      vertical-align: center;
-      color: deeppink;
+      vertical-align: baseline;
+      color: #EF514D;
     }
   }
   h3 {
-    margin: 16px 0;
+    color: $content-color;
+    margin: 0 0 $card-margin 0;
     font-size: 18px;
-    color: #7979d4;
   }
   h4 {
     font-size: 16px;
     line-height: 20px;
     margin: 0 0 16px 0;
     padding: 0;
+    a {
+      color: $content-color;
+    }
     i {
       font-size: 16px;
       line-height: 20px;
     }
   }
-}
-
-.card.back {
-  background: #252017;
-  img {
-    border: 1px solid #a99877;
-    border-radius: 3px;
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-  }
-  p {
-    padding: 0;
-    margin: 20px 0 0 0;
-    line-height: 160%;
+  .button {
+    font-family: $title-font;
+    background: $content-color;
+    border: 1px solid $content-color;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 0;
+    color: #ffffff !important;
     i {
-      color: deeppink;
+      font-size: 14px;
+      line-height: 16px;
+      vertical-align: bottom;
+    }
+    &:hover {
+      background: #0e0e0e;
+    }
+    .addeventatc_icon {
+      display: none
+    }
+  }
+  position: relative;
+  .illustrator {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    font-size: 0.75rem;
+    color: #f4f4f4;
+    a {
+      color: #f4f4f4;
     }
   }
 }
 
 .card.extra {
+  padding: $card-margin;
+  background: #ffffff;
   text-align: left;
   h2 {
-    font-family: Kodia;
+    font-family: $title-font;
     font-size: 30px;
-    color: #bf642f;
+    transform: skewX(-20deg);
     margin: 0 0 20px 0;
   }
   h3 {
-    font-family: Kodia;
+    font-family: $title-font;
     font-size: 20px;
-    color: #f4f4f4;
+    i {
+      vertical-align: center;
+      font-size: 20px
+    }
   }
   span.line-2 {
     color: limegreen;
@@ -165,9 +174,8 @@ i.material-icons {
     color: dodgerblue;
   }
   em {
-
-    color: #7979d4;
     font-style: normal;
+    font-weight: 900;
   }
   ul {
     padding: 0 0 0 24px;

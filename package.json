@@ -5,11 +5,11 @@
   "main": "index.html",
   "scripts": {
     "dev": "rm -rf dist/ && parcel index.html",
-    "build": "rm -rf docs/ && parcel build index.html -d docs -o index.html --public-url ./"
+    "build": "rm -rf docs/ && parcel build index.html -d docs --public-url ./"
   },
   "author": "perhapsspy@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.8.3"
   }
 }
