@@ -38,29 +38,14 @@ i.material-icons {
 }
 
 .container {
-  padding: 0 0;
-  max-width: 640px;
+  padding: 0 8px;
+  max-width: 768 - 16px;
   margin: 0 auto;
 }
 
-.skin {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  color: #ffffff;
-  img {
-    width: 20px;
-    display: inline-block;
-    vertical-align: bottom;
-  }
-  a {
-    color: #ffffff;
-  }
-}
-
 .card {
+  margin: 16px 0;
   padding: $card-margin 0;
-  margin: $card-margin 8px;
   .no-margin {
     margin-left: -$card-margin;
     margin-right: -$card-margin;
@@ -137,9 +122,23 @@ i.material-icons {
     }
   }
   position: relative;
+  .skin {
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    color: #ffffff;
+    img {
+      width: 20px;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    a {
+      color: #ffffff;
+    }
+  }
   .illustrator {
     position: absolute;
-    right: 8px;
+    right: 0px;
     bottom: 8px;
     font-size: 0.75rem;
     color: #f4f4f4;
